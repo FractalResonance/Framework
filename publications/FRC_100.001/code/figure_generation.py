@@ -16,7 +16,9 @@ from scipy.optimize import curve_fit
 import os
 
 # Create figures directory if it doesn't exist
-os.makedirs("figures", exist_ok=True)
+# Using relative path to ensure figures go to the parent directory's figures folder
+figures_path = "../figures"
+os.makedirs(figures_path, exist_ok=True)
 
 # Set random seed for reproducibility
 np.random.seed(42)
@@ -53,7 +55,7 @@ plt.xlabel('$x$')
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.savefig('figures/figure1_potential.png', dpi=300)
+plt.savefig(os.path.join(figures_path, 'figure1_potential.png'), dpi=300)
 plt.close()
 
 # Figure 2: Perturbed Wavefunction (Using Perturbation Theory)
@@ -85,7 +87,7 @@ plt.ylabel('$\psi_0(x)$')
 plt.title('Ground State Wavefunction')
 plt.legend()
 plt.grid(True, alpha=0.3)
-plt.savefig('figures/figure2_wavefunction.png', dpi=300)
+plt.savefig(os.path.join(figures_path, 'figure2_wavefunction.png'), dpi=300)
 plt.close()
 
 # Figure 3: Power-Law Correlation with Fit
@@ -111,7 +113,7 @@ plt.ylabel('$C(r)$')
 plt.title('Power-Law Correlation')
 plt.legend()
 plt.grid(True, which="both", alpha=0.3)
-plt.savefig('figures/figure3_correlation.png', dpi=300)
+plt.savefig(os.path.join(figures_path, 'figure3_correlation.png'), dpi=300)
 plt.close()
 
-print("Figure generation complete. All figures saved to the 'figures' directory.")
+print(f"Figure generation complete. All figures saved to the '{figures_path}' directory.")
