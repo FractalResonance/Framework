@@ -1,0 +1,35 @@
+# FRC Publications
+
+This directory contains the official releases of Fractal Resonance Cognition (FRC) framework publications.
+
+## Publication Series
+
+### 100 Series - Core Framework
+
+The 100 series establishes the foundational principles and methodologies of the Fractal Resonance Cognition framework.
+
+| ID | Title | Release Date | DOI |
+|----|-------|-------------|-----|
+| [FRC 100.001](./FRC_100.001.pdf) | Fractal Resonance Cognition: A Framework for Complex Systems Analysis | 2025 | [Pending] |
+
+## Versioning System
+
+FRC publications follow a structured versioning system:
+
+```
+FRC XXX.YYY
+```
+
+Where:
+- **XXX**: Series number (e.g., 100 for core framework papers)
+- **YYY**: Sequential publication number within the series
+
+## Citation
+
+All publications in this repository should be cited according to the format provided in the CITATION.cff file at the root of this repository.
+
+## Copyright Notice
+
+© 2025 Hadi Servat, All Rights Reserved
+
+All publications are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). See the LICENSE file in the repository root for details.
