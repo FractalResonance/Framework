@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it as below."
+authors:
+  - family-names: "Servat"
+    given-names: "Hadi"
+    orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" # Add your ORCID if available
+title: "Fractal Resonance Cognition: A Framework for Complex Systems Analysis"
+version: 100.001
+date-released: 2025-03-23
+url: "https://github.com/FractalResonance/Framework"
+repository-code: "https://github.com/FractalResonance/Framework"
+license: CC-BY-NC-ND-4.0
+keywords:
+  - fractal resonance
+  - FRC
+  - Fractal Resonance Cognition
+  - complex systems
+  - quantum chaos
+  - system dynamics
+  - emergence
+  - adaptive systems
+  - nonlinear dynamics
+references:
+  - type: article
+    authors:
+      - family-names: "Servat"
+        given-names: "Hadi"
+    title: "Fractal Resonance Cognition: A Framework for Complex Systems Analysis"
+    year: 2025
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.XXXXXXX"  # Replace with actual DOI when available
+    repository-code: "https://github.com/FractalResonance/Framework"
+    url: "https://fractalresonance.com"
