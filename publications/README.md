@@ -10,19 +10,28 @@ The 100 series establishes the foundational principles and methodologies of the 
 
 | ID | Title | Release Date | DOI |
 |----|-------|-------------|-----|
-| [FRC 100.001](./FRC_100.001.pdf) | Fractal Resonance Cognition: A Framework for Complex Systems Analysis | 2025 | [Pending] |
+| [FRC 100.001](./FRC_100.001/) | Fractal Resonance Cognition: A Framework for Complex Systems Analysis | 2025 | [Pending] |
 
 ## Versioning System
 
 FRC publications follow a structured versioning system:
 
 ```
-FRC XXX.YYY
+FRC XXX.YYY[.Z]
 ```
 
 Where:
 - **XXX**: Series number (e.g., 100 for core framework papers)
 - **YYY**: Sequential publication number within the series
+- **Z**: (Optional) Submission version for different platforms
+
+For example:
+- **FRC 100.001** - Canonical version in this repository
+- **FRC 100.001.2** - viXra submission version
+- **FRC 100.001.3** - Zenodo submission version 
+- **FRC 100.001.4** - Future platform version
+
+This versioning system allows tracking different versions of the same paper across various publication platforms while maintaining a consistent reference to the core paper.
 
 ## Citation
 
