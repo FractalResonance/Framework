@@ -12,11 +12,15 @@ The 100 series establishes the foundational principles and methodologies of the 
 |----|-------|-------------|-----|
 | [FRC 100.001](./FRC_100.001/) | Fractal Resonance Cognition: A Framework for Complex Systems Analysis | 2025 | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15073056.svg)](https://doi.org/10.5281/zenodo.15073056) |
 | [FRC 100.002](./FRC_100.002/) | Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard | 2025 | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15079278.svg)](https://doi.org/10.5281/zenodo.15079278) |
+| [FRC 100.003](./FRC_100.003/) | Fractal Resonance Collapse: Guided Wavefunction Collapse via Resonant Attractors | 2025 | [Pending] |
 
 ## Paper Relationships
 
 - **FRC 100.001** is the foundational paper introducing the FRC framework, its theoretical basis, and potential applications across disciplines. It has been published on [Zenodo](https://doi.org/10.5281/zenodo.15073056).
+
 - **FRC 100.002** applies the FRC framework to a specific system in quantum chaos (the stadium billiard), demonstrating how fractal resonance potentials induce self-similar nodal patterns in wavefunctions. It has been published on [Zenodo](https://doi.org/10.5281/zenodo.15079278) and references FRC 100.001 through the "Related works" field.
+
+- **FRC 100.003** extends the framework to quantum measurement, proposing that wavefunction collapse follows structured pathways guided by resonant attractor states in phase space. It builds on both FRC 100.001 and FRC 100.002, addressing the quantum measurement problem through the lens of fractal resonance.
 
 Future papers will continue to build on the FRC framework, either extending the theoretical foundation or applying it to additional domains.
 
@@ -39,6 +43,7 @@ For example:
 - **FRC 100.001.3** - Zenodo submission version (DOI: 10.5281/zenodo.15073056)
 - **FRC 100.001.4** - Future platform version
 - **FRC 100.002.3** - Zenodo submission version (DOI: 10.5281/zenodo.15079278)
+- **FRC 100.003.1** - Preprint version pending DOI assignment
 
 This versioning system allows tracking different versions of the same paper across various publication platforms while maintaining a consistent reference to the core paper.
 
@@ -56,6 +61,12 @@ For FRC 100.002:
 ```
 Servat, H. (2025). Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard [FRC 100.002]. 
 Fractal Resonance Research. https://doi.org/10.5281/zenodo.15079278
+```
+
+For FRC 100.003:
+```
+Servat, H. (2025). Fractal Resonance Collapse: Guided Wavefunction Collapse via Resonant Attractors [FRC 100.003]. 
+Fractal Resonance Research.
 ```
 
 ## Copyright Notice
