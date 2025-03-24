@@ -10,6 +10,7 @@ date-released: 2025-03-23
 url: "https://github.com/FractalResonance/Framework"
 repository-code: "https://github.com/FractalResonance/Framework"
 license: CC-BY-NC-ND-4.0
+doi: 10.5281/zenodo.15073056
 keywords:
   - fractal resonance
   - FRC
@@ -29,6 +30,6 @@ references:
     year: 2025
     identifiers:
       - type: doi
-        value: "10.5281/zenodo.XXXXXXX"  # Replace with actual DOI when available
+        value: "10.5281/zenodo.15073056"
     repository-code: "https://github.com/FractalResonance/Framework"
     url: "https://fractalresonance.com"
