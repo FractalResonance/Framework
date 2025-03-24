@@ -33,3 +33,14 @@ references:
         value: "10.5281/zenodo.15073056"
     repository-code: "https://github.com/FractalResonance/Framework"
     url: "https://fractalresonance.com"
+  - type: article
+    authors:
+      - family-names: "Servat"
+        given-names: "Hadi"
+    title: "Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard"
+    year: 2025
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.15079278"
+    repository-code: "https://github.com/FractalResonance/Framework"
+    url: "https://fractalresonance.com"
