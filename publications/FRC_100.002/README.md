@@ -36,10 +36,11 @@ The simulations use:
 - **Title**: Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard
 - **Author**: Hadi Servat (Independent Researcher, publish@fractalresonance.com)
 - **Website**: fractalresonance.com
-- **Publication Date**: March 23, 2025
+- **Publication Date**: March 24, 2025
 - **Resource Type**: Preprint
 - **License**: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 - **Keywords**: Fractal Resonance Cognition, FRC, quantum chaos, stadium billiard, nodal patterns, fractal dimensions, self-similar dynamics, wavefunction morphology
+- **DOI**: [10.5281/zenodo.15079278](https://zenodo.org/records/15079278)
 
 ## Citation
 
@@ -47,7 +48,7 @@ Please cite this paper as:
 
 ```
 Servat, H. (2025). Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard [FRC 100.002]. 
-Fractal Resonance Research. https://doi.org/[DOI when available]
+Fractal Resonance Research. https://doi.org/10.5281/zenodo.15079278
 ```
 
 © 2025 Hadi Servat, All Rights Reserved
