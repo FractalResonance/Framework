@@ -15,15 +15,19 @@ The FRC framework provides researchers, analysts, and practitioners with tools t
 
 ## Publications
 
-### Current Release
+### Released Papers
 
-- **[FRC 100.001](./publications/FRC_100.001.pdf)** - "Fractal Resonance Cognition: A Framework for Complex Systems Analysis" (2025)
+- **[FRC 100.001](./publications/FRC_100.001/FRC_100.001.pdf)** - "Fractal Resonance Cognition: A Framework for Complex Systems Analysis" (2025)
   - This foundational paper introduces the core principles and methodologies of the FRC framework
-  - DOI: [Link to Zenodo DOI when published]
+  - DOI: [10.5281/zenodo.15073056](https://zenodo.org/records/15073056)
+
+- **[FRC 100.002](./publications/FRC_100.002/FRC_100.002.pdf)** - "Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard" (2025)
+  - This application paper demonstrates FRC in quantum chaotic systems
+  - DOI: [10.5281/zenodo.15079278](https://zenodo.org/records/15079278)
 
 ### Future Releases
 
-Additional papers in the FRC series will be published in this repository as they are completed, building upon the foundational concepts established in FRC 100.001.
+Additional papers in the FRC series will be published in this repository as they are completed, building upon the foundational concepts established in the existing papers.
 
 ## Citation
 
@@ -31,7 +35,10 @@ If you reference or use concepts from the FRC framework in your own work, please
 
 ```
 Servat, H. (2025). Fractal Resonance Cognition: A Framework for Complex Systems Analysis [FRC 100.001]. 
-Fractal Resonance Research. https://doi.org/[DOI from Zenodo]
+Fractal Resonance Research. https://doi.org/10.5281/zenodo.15073056
+
+Servat, H. (2025). Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard [FRC 100.002]. 
+Fractal Resonance Research. https://doi.org/10.5281/zenodo.15079278
 ```
 
 A `CITATION.cff` file is included in this repository for citation management tools.
