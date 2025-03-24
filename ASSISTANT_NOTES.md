@@ -23,8 +23,9 @@ The repository is organized as follows:
 ### FRC 100.002
 - **Title**: Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard
 - **Author**: Hadi Servat
-- **Zenodo DOI**: [Pending]
+- **Zenodo DOI**: [10.5281/zenodo.15079278](https://zenodo.org/records/15079278)
 - **License**: CC BY-NC-ND 4.0
+- **Published**: March 24, 2025
 - **Local Figures**: Located in `/Users/hadi/Development/FRC/Publish/100002/`
 
 ## Versioning System
@@ -45,6 +46,7 @@ Important directories on the local machine:
 2. Generated HTML files with MathJax for proper equation rendering
 3. Set up Python scripts for generating figures
 4. Published FRC 100.001 to Zenodo on March 23, 2025
+5. Published FRC 100.002 to Zenodo on March 24, 2025
 
 ## Notes for Future Sessions
 
