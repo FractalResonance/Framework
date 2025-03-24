@@ -1,0 +1,1 @@
+<raw_content encoding="utf-8" path="/Users/hadi/Development/FRC/Publish/100003/code/vortex_attractors.py"/>
