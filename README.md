@@ -25,6 +25,10 @@ The FRC framework provides researchers, analysts, and practitioners with tools t
   - This application paper demonstrates FRC in quantum chaotic systems
   - DOI: [10.5281/zenodo.15079278](https://zenodo.org/records/15079278)
 
+- **[FRC 100.003](./publications/FRC_100.003/FRC_100.003_manuscript.md)** - "Fractal Resonance Collapse: Guided Wavefunction Collapse via Resonant Attractors" (2025)
+  - This extension paper applies FRC to quantum measurement and wavefunction collapse
+  - DOI: [Pending]
+
 ### Future Releases
 
 Additional papers in the FRC series will be published in this repository as they are completed, building upon the foundational concepts established in the existing papers.
@@ -39,6 +43,9 @@ Fractal Resonance Research. https://doi.org/10.5281/zenodo.15073056
 
 Servat, H. (2025). Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard [FRC 100.002]. 
 Fractal Resonance Research. https://doi.org/10.5281/zenodo.15079278
+
+Servat, H. (2025). Fractal Resonance Collapse: Guided Wavefunction Collapse via Resonant Attractors [FRC 100.003].
+Fractal Resonance Research.
 ```
 
 A `CITATION.cff` file is included in this repository for citation management tools.
@@ -68,4 +75,4 @@ Under the following terms:
 
 ---
 
-**Keywords**: fractal resonance, FRC, Fractal Resonance Cognition, complex systems, quantum chaos, system dynamics, emergence, adaptive systems, nonlinear dynamics
+**Keywords**: fractal resonance, FRC, Fractal Resonance Cognition, complex systems, quantum chaos, quantum measurement, wavefunction collapse, resonant attractors, system dynamics, emergence, adaptive systems, nonlinear dynamics
