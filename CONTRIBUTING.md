@@ -1,86 +1,67 @@
 # Contributing to the Fractal Resonance Cognition Framework
 
-Thank you for your interest in contributing to the Fractal Resonance Cognition (FRC) Framework! This document provides guidelines for contributing to this project. By participating, you agree to abide by both these contribution guidelines and our [Code of Conduct](CODE_OF_CONDUCT.md).
+Thank you for your interest in contributing to the Fractal Resonance Cognition (FRC) Framework! This document provides guidelines for contributing to this project.
 
 ## Ways to Contribute
 
 There are several ways you can contribute to the FRC Framework:
 
-1. **Research Applications**: Apply the FRC framework to new domains or systems
-2. **Mathematical Extensions**: Extend or refine the mathematical formalism
-3. **Code Implementation**: Develop algorithms, simulations, or visualizations
-4. **Documentation**: Improve explanations, examples, or tutorials
-5. **Bug Reports**: Report errors or inconsistencies in papers or code
-6. **Feature Requests**: Suggest new directions or applications
+1. **Theoretical Extensions**: Develop mathematical extensions to the FRC operator or related formalism
+2. **Applications**: Apply FRC to new domains and document findings
+3. **Code Implementations**: Develop software that implements FRC principles
+4. **Documentation**: Improve explanations of existing concepts
+5. **Visualization**: Create visualizations that help explain FRC concepts
+6. **Experimental Design**: Propose experiments to validate FRC predictions
 
 ## Contribution Process
 
-### For Researchers and Theorists
+### For Papers and Major Theoretical Contributions
 
-If you're applying FRC to new domains or developing theoretical extensions:
+1. **Initial Contact**: Email research@fractalresonance.com with your proposed contribution
+2. **Discussion Phase**: Engage in discussion about the theoretical implications
+3. **Draft Submission**: Submit a draft of your paper as a pull request or via email
+4. **Review Process**: Your contribution will be reviewed by the FRC research team
+5. **Publication**: Upon acceptance, your contribution will be added to the appropriate section
 
-1. **Initial Inquiry**: Open an issue with a brief outline of your proposed research
-2. **Discussion**: Engage with community feedback and suggestions
-3. **Development**: Develop your research independently or in collaboration
-4. **Submission**: Submit your work as a formal proposal using the pull request template
-5. **Review**: Your submission will undergo peer review by project maintainers
-6. **Publication**: Approved work may be included in the repository with proper attribution
+### For Code and Documentation
 
-### For Code Contributors
+1. **Fork the Repository**: Create your own fork of the FRC Framework repository
+2. **Create a Branch**: Make a branch for your contribution
+3. **Make Changes**: Implement your changes following the style guidelines below
+4. **Test**: Ensure your contributions work as expected
+5. **Submit a Pull Request**: Create a pull request describing your changes
+6. **Review Process**: Your PR will be reviewed by the maintainers
+7. **Merge**: After approval, your contribution will be merged
 
-When contributing code implementations, simulations, or visualizations:
+## Style Guidelines
 
-1. **Fork the Repository**: Create your own fork of the project
-2. **Create a Branch**: Make your changes in a new branch
-3. **Follow Style Guidelines**: Maintain consistent coding style with existing code
-4. **Write Tests**: Include appropriate tests for your code
-5. **Document Your Code**: Include clear comments and documentation
-6. **Submit a Pull Request**: Reference any related issues
+### Code
 
-### For Documentation Contributors
+- **Python**: Follow PEP 8 style guidelines
+- **Notebooks**: Include markdown explanations with LaTeX for equations
+- **Documentation**: Include docstrings and comments explaining the connection to FRC principles
 
-To improve documentation:
+### Papers
 
-1. **Identify Gaps**: Find areas where documentation could be improved
-2. **Make Focused Changes**: Submit small, specific improvements
-3. **Follow Format**: Maintain consistent style and formatting
-4. **Submit a Pull Request**: Explain the rationale for your changes
+- **Format**: Use Markdown with LaTeX for equations
+- **Equations**: Follow the notation conventions established in FRC 100.001
+- **Citations**: Include DOIs where available
+- **Structure**: Include Abstract, Introduction, Methods, Results, Discussion, and References
 
-## Intellectual Property and Licensing
+## Licensing
 
-By contributing to this project, you agree that:
+By contributing to this repository, you agree that your contributions will be licensed under the same license as the project (CC BY-NC-ND 4.0). For code contributions, unless explicitly stated otherwise, the code is licensed under the MIT license.
 
-1. Your contributions will be licensed under the same [CC BY-NC-ND 4.0 license](LICENSE) as the project
-2. You have the right to submit the contributions
-3. Substantial contributions may warrant co-authorship on future publications, at the discretion of the project maintainers
-4. Minor bug fixes or editorial changes will be acknowledged in release notes
+## Community Standards
 
-## Communication Channels
+All contributors are expected to adhere to the [Code of Conduct](CODE_OF_CONDUCT.md). Please ensure you've read it before participating.
 
-- **GitHub Issues**: For bug reports, feature requests, and general discussion
-- **Email**: For private inquiries, contact publish@fractalresonance.com
-- **Website**: For public resources and updates, visit [fractalresonance.com](https://fractalresonance.com)
+## Questions?
 
-## Review Process
+If you have any questions about contributing, please email publish@fractalresonance.com or open an issue in the repository.
 
-All contributions will undergo review before acceptance. The review process includes:
+Thank you for your interest in advancing the Fractal Resonance Cognition framework!
 
-1. **Initial Screening**: Checking for completeness and relevance
-2. **Technical Review**: Assessing correctness and consistency with the FRC framework
-3. **Quality Assessment**: Evaluating clarity, organization, and implementation quality
-4. **Final Decision**: Acceptance, request for revisions, or rejection
+## Contributor Recognition
 
-## Recognition
-
-Contributors will be recognized based on the nature of their contributions:
-
-- **Major Contributors**: Listed as co-authors on relevant publications
-- **Minor Contributors**: Acknowledged in papers and repository documentation
-- **Code Contributors**: Credited in code comments and documentation
-- **Documentation Contributors**: Acknowledged in release notes
-
-Thank you for contributing to the advancement of the Fractal Resonance Cognition framework!
-
----
-
-© 2025 Hadi Servat, All Rights Reserved
+Significant contributors will be acknowledged in relevant publications and on the fractalresonance.com website. We believe in giving proper credit to all who help advance this framework.
