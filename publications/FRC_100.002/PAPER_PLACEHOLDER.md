@@ -13,6 +13,7 @@ This file serves as a placeholder for the main paper PDF. To complete the reposi
    - References to the 15th eigenfunction (using 150×150 grid)
    - Inclusion of Figure 3 showing the FRC potential visualization
    - Reference to FRC 100.001 with DOI: https://doi.org/10.5281/zenodo.15073056
+   - Include DOI for FRC 100.002: https://doi.org/10.5281/zenodo.15079278
 
 ## Instructions for uploading
 
@@ -37,9 +38,9 @@ Once uploaded, this placeholder file can be removed.
 
 FRC 100.002 builds upon FRC 100.001, the foundational paper in the series. It demonstrates practical application of the FRC framework to a specific quantum chaotic system, the stadium billiard.
 
-FRC 100.001 is now published on Zenodo with DOI: [10.5281/zenodo.15073056](https://doi.org/10.5281/zenodo.15073056). 
+FRC 100.001 is published on Zenodo with DOI: [10.5281/zenodo.15073056](https://doi.org/10.5281/zenodo.15073056).
 
-When uploading this paper (FRC 100.002) to Zenodo, be sure to reference FRC 100.001 using the "Related works" field with this DOI.
+FRC 100.002 is now published on Zenodo with DOI: [10.5281/zenodo.15079278](https://doi.org/10.5281/zenodo.15079278). It references FRC 100.001 using the "Related works" field.
 
 ## Updated Numerical Parameters
 
