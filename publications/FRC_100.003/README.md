@@ -51,6 +51,7 @@ We propose using Laguerre-Gaussian (LG) optical beams to test FRC predictions, w
 - **Resource Type**: Preprint
 - **License**: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 - **Keywords**: Fractal Resonance Collapse, FRC, quantum measurement, wavefunction collapse, resonant attractors, vortex dynamics, Laguerre-Gaussian beams
+- **DOI**: [10.5281/zenodo.15079820](https://zenodo.org/records/15079820)
 
 ## Citation
 
@@ -58,7 +59,7 @@ Please cite this paper as:
 
 ```
 Servat, H. (2025). Fractal Resonance Collapse: Guided Wavefunction Collapse via Resonant Attractors [FRC 100.003]. 
-Fractal Resonance Research.
+Fractal Resonance Research. https://doi.org/10.5281/zenodo.15079820
 ```
 
 © 2025 Hadi Servat, All Rights Reserved
