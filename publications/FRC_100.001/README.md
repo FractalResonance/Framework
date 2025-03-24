@@ -7,13 +7,22 @@ This directory contains the flagship paper introducing the Fractal Resonance Cog
 - [Paper](./FRC_100.001.pdf) - The main paper introducing the theoretical foundations of FRC
 - [Code Appendix](./code/) - Python code for reproducing the figures in the paper
 
+## Publication
+
+This paper has been published on Zenodo:
+- **DOI**: [10.5281/zenodo.15073056](https://doi.org/10.5281/zenodo.15073056)
+- **Publication Date**: March 23, 2025
+- **License**: CC BY-NC-ND 4.0
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15073056.svg)](https://doi.org/10.5281/zenodo.15073056)
+
 ## Versioning
 
 Different versions of this paper are being submitted to various platforms:
 
 - FRC 100.001 - The canonical version in this repository
 - FRC 100.001.2 - viXra submission version
-- FRC 100.001.3 - Zenodo submission version
+- FRC 100.001.3 - Zenodo submission version (DOI: 10.5281/zenodo.15073056)
 - FRC 100.001.4 - Future platform version
 
 ## Abstract
@@ -32,7 +41,7 @@ Please cite this work as:
 
 ```
 Servat, H. (2025). Fractal Resonance Cognition: A Framework for Complex Systems Analysis [FRC 100.001]. 
-Fractal Resonance Research. https://doi.org/[DOI when available]
+Fractal Resonance Research. https://doi.org/10.5281/zenodo.15073056
 ```
 
 © 2025 Hadi Servat, All Rights Reserved
