@@ -1,0 +1,9 @@
+{
+  "title": "FRC 100.004 — Quantum Foundations in Fractal Resonance Cognition",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
+  "description": "Collapse as resonance phase‑locking: a small coherence drift added to open‑system dynamics yields deterministic phase‑lock to pointer attractors. We state the minimal model, give two testable predictions (weak pre‑collapse drift; dephasing asymmetry vs pointer coupling), and provide reproducible simulations (figures + code).",
+  "keywords": ["quantum foundations","measurement","resonance","phase‑locking","weak measurement","interferometry","FRC 100.004"],
+  "license": "cc-by-4.0"
+}
