@@ -91,3 +91,4 @@ scripts/set_zenodo.sh 567.901 && git commit -am "set zenodo for 567.901" && git 
 - CI builds all TeX/MD PDFs and attaches them to the Release
 - Zenodo ingests the tag’s .zenodo.json and mints/updates the DOI
 
+\nSee [docs/PUBLISHING.md](docs/PUBLISHING.md) for DOI policy and workflow.

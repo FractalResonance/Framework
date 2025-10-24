@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "title": "Fractal Resonance Framework — FRC 566.001: Entropy–Coherence Reciprocity and UCC",
+    "upload_type": "publication",
+    "publication_type": "report",
+    "publication_date": "2025-10-24",
+    "version": "v566.001",
+    "creators": [
+      { "name": "Servat, Hadi", "affiliation": "Digid.ca" }
+    ],
+    "description": "Short abstract here.",
+    "keywords": ["reciprocity", "UCC", "coherence", "FRC 566.001"],
+    "license": "cc-by-4.0",
+    "related_identifiers": [
+      {"identifier": "https://github.com/FractalResonance/Framework/releases/tag/v566.001", "relation": "isSupplementTo", "scheme": "url"}
+    ]
+  }
+}
