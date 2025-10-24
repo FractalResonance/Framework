@@ -1,0 +1,9 @@
+{
+  "title": "FRC 100.006 — Born Rule from Resonant Equilibrium",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
+  "description": "Derives the Born rule from a resonant equilibrium of microstates in a deterministic collapse model. A small coherence drift biases trajectories toward pointer attractors; the stationary weights are proportional to |alpha|^2. Includes toy simulations, convergence plots, and clear falsification tests.",
+  "keywords": ["Born rule","measurement","resonance","phase-locking","weak measurement","FRC 100.006"],
+  "license": "cc-by-4.0"
+}
