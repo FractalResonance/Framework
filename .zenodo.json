@@ -1,10 +1,10 @@
 {
-  "title": "Fractal Resonance Framework — FRC 567.901: Riemann Resonance Maximization",
+  "title": "Fractal Resonance Framework — FRC 566.001: Entropy–Coherence Reciprocity and UCC",
   "upload_type": "publication",
   "publication_type": "report",
   "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
-  "description": "Numerical evidence and diagnostics for coherence maxima near Re(s)=1/2 using FRC 567.901, including stationary tests and KS statistics.",
-  "keywords": ["Riemann zeta", "coherence", "stationary test", "KS test", "Hilbert–Pólya", "FRC 567.901"],
+  "description": "Formalizes dS + k_* d ln C = 0 with unit conventions and the UCC; includes reproducible examples and dissipation inequality.",
+  "keywords": ["reciprocity", "UCC", "ΔG", "dissipation", "FRC 566.001"],
   "license": "cc-by-4.0",
-  "version": "v567.901-rc3"
+  "version": "v566.001-rc3"
 }
