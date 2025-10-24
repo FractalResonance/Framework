@@ -100,3 +100,44 @@ See the [FRC Series Overview](docs/SERIES_OVERVIEW.md) for the dependency chain 
 - FRC 100.006.002 — Born‑Rule Deviations under Finite‑Time and Non‑Equilibrium Conditions  
   DOI: https://doi.org/10.5281/zenodo.17438410  
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17438410.svg)](https://doi.org/10.5281/zenodo.17438410)
+
+---
+
+## Zenodo & Publishing House Rules
+
+- One concept DOI per paper (no bundling). Each paper gets its own Zenodo concept.
+- Always attach the PDF (and code archive if relevant) to the record.
+- Titles start with the FRC ID (e.g., `FRC 100.006 — …`).
+- License on Zenodo: `CC BY‑NC‑SA 4.0` (non‑commercial, share‑alike) for all new records.
+- Related identifiers:
+  - `references` → upstream FRC papers (e.g., 566.001, 100.003 concept, 100.003.566, 100.004, 100.005, 100.006).
+  - `isSupplementTo` → the matching GitHub Release tag.
+  - `isPreviousVersionOf` / `isNewVersionOf` → only when truly superseding a record.
+- Creators: include full name, affiliation, and ORCID for Hadi Servat across all records.
+- Avoid GitHub auto‑archive for concept minting. Use the per‑paper API deposition flow (CI Release only builds/attaches PDFs).
+
+## Current TODOs
+
+- Legacy records 100.001 (10.5281/zenodo.15073056) and 100.002 (10.5281/zenodo.15079278):
+  - [ ] Set reader‑friendly descriptions and keywords
+  - [ ] Set license to CC BY‑NC‑SA
+  - [ ] Decide whether to attach PDFs (preprints) or keep as pointers to later papers
+- 100.003 v2 under concept 10.5281/zenodo.15079820:
+  - [ ] Confirm final metadata and description, ensure PDF is attached and version DOI visible
+- ORCID:
+  - [ ] Add Hadi Servat ORCID to all new concept records (and legacy, if desired)
+- Communities (optional):
+  - [ ] Decide and add relevant Zenodo communities (e.g., Open Science; domain groups)
+- Cross‑links (related_identifiers):
+  - [ ] Verify each record references the correct upstream FRC DOIs and has `isSupplementTo` → GitHub Release
+- README & PDFs:
+  - [ ] Ensure DOI badges exist for 100.004/005/006/006.002/566.001/567.901
+  - [ ] Insert DOI lines under titles in all PDFs (done for most; confirm remaining)
+- 567.901 polish:
+  - [ ] Remove the last minor overfull warnings (micro‑reflow or local `\small` on long paragraphs)
+- arXiv packs & endorsements:
+  - [ ] 100.004 (quant‑ph), 100.005 (cond‑mat.stat‑mech), 100.006 (quant‑ph), 100.006.002 (quant‑ph), 566.001 (physics.gen‑ph), 567.901 (math‑ph)
+  - [ ] Use the prepared arXiv zips in `arxiv/` and the one‑page summaries; send endorsement emails
+- Redundant records:
+  - [ ] Supersede/annotate any remaining GitHub auto‑archives without PDFs to point to the correct paper DOIs
+
