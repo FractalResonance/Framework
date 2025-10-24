@@ -1,12 +1,10 @@
 {
-  "title": "Fractal Resonance Framework — FRC 567.901 Resonance Maximization",
+  "title": "Fractal Resonance Framework — FRC 567.901: Riemann Resonance Maximization",
   "upload_type": "publication",
   "publication_type": "report",
-  "creators": [
-    {"name": "Servat, Hadi", "affiliation": "Digid.ca"},
-    {"name": "GPT-5"}
-  ],
+  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
   "description": "Numerical evidence and diagnostics for coherence maxima near Re(s)=1/2 using FRC 567.901, including stationary tests and KS statistics.",
-  "keywords": ["Riemann zeta", "coherence", "entropy", "stationary test", "Hilbert–Pólya", "FRC 567.901"],
-  "license": "cc-by-4.0"
+  "keywords": ["Riemann zeta", "coherence", "stationary test", "KS test", "Hilbert–Pólya", "FRC 567.901"],
+  "license": "cc-by-4.0",
+  "version": "v567.901-rc2"
 }
