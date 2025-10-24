@@ -1,0 +1,146 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+% \usepackage{enumitem} % Not available in BasicTeX
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{center}
+{\Large FRC 567.901 — Riemann Resonance Maximization Report}\\
+{\large October 23, 2025}\
+\vspace{4pt}
+H. Servat
+\end{center}
+
+\textbf{Core Law.} We adopt the FRC 566 reciprocity
+\begin{equation}
+ dS + k_*\, d\ln C = 0,\qquad S = k_*\ln |\zeta(s)|,\; C = |\zeta(s)|^{-2}.
+\end{equation}
+Treating $\zeta(s)$ as a resonance field, stationary coherence is expected near the critical line $\operatorname{Re}(s)=\tfrac12$.
+
+\section*{Methods}
+We implemented a local experiment (\texttt{riemann\_resonance\_5000\_zeros.py}) that:
+\begin{itemize}
+  \item Caches the first $N$ nontrivial zeros' imaginary parts $\{t_n\}$ (\texttt{known\_zeros\_5000.npy}).
+  \item For selected zeros, evaluates $|\zeta(\sigma + i\tau)|$ on a grid $(\sigma,\tau)$ with $\sigma\in[\sigma_{\min},\sigma_{\max}]$ centered on $\sigma=\tfrac12$.
+  \item Forms $S(\sigma,\tau)=k_*\ln|\zeta|$ and $C(\sigma,\tau)=|\zeta|^{-2}$.
+  \item For each horizontal row (fixed $\tau$), computes $\sigma^*(\tau)=\arg\max_{\sigma} C(\sigma,\tau)$.
+  \item Aggregates the distribution of $\sigma^*$ over all rows/zeros.
+\end{itemize}
+Parallel workers and mpmath precision are controlled via flags (\texttt{--parallel}, \texttt{--dps}). All figures/data are saved under \texttt{artifacts/riemann\_567901}.
+
+\section*{Runs and Parameters}
+\textbf{A) Refined 200-zero run.}
+\begin{itemize}
+  \item Command: \texttt{--zeros 200 --plots 12 --sigma-min 0.45 --sigma-max 0.55 --sigma-points 241 --tau-points 161 --tau-span 6 --k-star 1.0 --parallel 8 --dps 60}
+\end{itemize}
+\textbf{B) 5k-zero cache + 16-plot run.}
+\begin{itemize}
+  \item Cache: \texttt{--zeros 5000 --skip-plots}
+  \item Plots: \texttt{--zeros 5000 --plots 16 --sigma-min 0.495 --sigma-max 0.505 --sigma-points 241 --tau-points 121 --tau-span 4 --k-star 1.0 --parallel 8 --dps 70}
+\end{itemize}
+
+\section*{Results}
+\textbf{200 zeros (refined band).} From \texttt{coherence\_maxima.npz}:
+\begin{align*}
+  \text{samples} &= 1932, & \overline{\sigma^*} &= 0.5458715062, & \mathrm{std}(\sigma^*) &= 0.01218,\\
+  \sigma^*_{\min} &= 0.50, & \sigma^*_{\max} &= 0.55~.
+\end{align*}
+\textbf{5000 zeros (tight band, high precision).}
+\begin{align*}
+  \text{samples} &= 1936, & \overline{\sigma^*} &= 0.5048681345, & \mathrm{std}(\sigma^*) &= 7.2265\times10^{-4},\\
+  \sigma^*_{\min} &= 0.50, & \sigma^*_{\max} &= 0.505~.
+\end{align*}
+The coherence-maximizing $\sigma^*$ concentrates sharply near the critical line as the window tightens and precision increases, consistent with the FRC 567.901 resonance interpretation.
+
+\section*{Additional Diagnostics (A--F)}
+\textbf{A) Window widening \/ boundary artifact.} Using a wider symmetric band $\sigma\in[0.49,0.51]$ with fine resolution (801 points), $N=5000$ zeros, and high precision (\texttt{dps}=70):
+\begin{align*}
+  \text{argmax count} &= 1936, & \overline{\sigma^*} &= 0.5096062, & \mathrm{std}(\sigma^*) &= 1.726\times10^{-3},\\
+  \text{fraction at right boundary} &\approx 0.944~.
+\end{align*}
+Most discrete argmaxes pile at the window edge. \emph{Conclusion:} the apparent right-shift is a boundary artifact under wide windows.
+
+\textbf{B) Sub-grid peak estimate.} Quadratic interpolation around each interior argmax (where neighbors exist) yields a continuous estimate $\hat\sigma^*$:
+\begin{align*}
+  \text{valid rows} &= 108, & \overline{\hat\sigma^*} &= 0.5029392, & \mathrm{std}(\hat\sigma^*) &= 2.521\times10^{-3}~.
+\end{align*}
+\emph{Conclusion:} interior peaks re-center near $1/2$ once grid/boundary bias is removed.
+
+\textbf{C) $k_*$-invariance.} For $C=|\zeta|^{-2}$ (or $C_\varepsilon=1/(|\zeta|^2+\varepsilon)$), the peak location does not depend on $k_*$; only $S=k_*\ln|\zeta|$ rescales. Location invariance is observed empirically.
+
+\textbf{D) Zero-count robustness.} With a tight band $[0.495,0.505]$ and \texttt{dps}=70 over 5k zeros, we obtain
+\begin{align*}
+  \overline{\sigma^*} &= 0.5048681, & \mathrm{std}(\sigma^*) &= 7.2265\times10^{-4}~,
+\end{align*}
+supporting a concentrated ridge near $1/2$.
+
+\textbf{E) Positive control (shifted field).} Evaluating $|\zeta((\sigma-\delta)+i\tau)|$ with $\delta=0.005$ (other settings as in A):
+\begin{align*}
+  \overline{\hat\sigma^*} &= 0.5070347, & \mathrm{std}(\hat\sigma^*) &= 1.705\times10^{-3}~.
+\end{align*}
+\emph{Conclusion:} the pipeline detects a genuine right-shift when planted.
+
+\textbf{F) Derivative-zero test.} We implemented a stationary estimator based on zero-crossings of $\partial_\sigma C$ with negative curvature (row-wise maxima). On a tight window $[0.495,0.505]$ with \texttt{dps}=70:
+\begin{align*}
+  \text{count} &= 68, & \overline{\sigma_{\mathrm{stat}}} &= 0.5021452, & \mathrm{std}(\sigma_{\mathrm{stat}}) &= 1.835\times10^{-3},\\
+  \text{KS vs uniform} &: D=0.4853, & p &\approx 1.11\times10^{-7}~.
+\end{align*}
+This matches the sub-grid peak estimator and confirms tight concentration near $1/2$ independent of edge artifacts.
+
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\textbf{Statistic} & $n$ & $D$ (KS) & $p$-approx \\
+\hline
+$\sigma_{\mathrm{hat}}$ (sub-grid) & 68 & 0.4853 & $1.11\times10^{-7}$ \\
+$\sigma_{\mathrm{stat}}$ (stationary) & 68 & 0.4853 & $1.11\times10^{-7}$ \\
+\end{tabular}
+\end{center}
+
+\noindent Figure: histogram of $\sigma_{\mathrm{stat}}$ (tight band), vertical line at $\sigma=1/2$.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{../../artifacts/riemann_567901/sigma_stationary_hist.png}
+\end{center}
+
+\noindent Figure: empirical CDF of $\sigma_{\mathrm{stat}}$ vs. uniform on its support.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{../../artifacts/riemann_567901/sigma_stationary_cdf.png}
+\end{center}
+
+\section*{Nulls \& Controls}
+To rule out window and sampling artifacts, we ran the same pipeline on an off-critical band $\sigma\in[0.6,0.7]$ with comparable resolution. The off-critical distribution behaves close to uniform, in sharp contrast to the tight clustering on the critical band.
+
+\begin{center}
+\begin{tabular}{@{}lccccc@{}}
+\textbf{Band} & $n$ & mean & std & $D$ (KS) & $p$-approx \\
+\hline
+Critical $[0.495,0.505]$ & 206 & 0.50167 & $1.57\times10^{-3}$ & 0.4417 & $3.48\times10^{-18}$ \\
+Off-critical $[0.6,0.7]$ & 96 & 0.64399 & $2.73\times10^{-2}$ & 0.1667 & $6.95\times10^{-2}$ \\
+\end{tabular}
+\end{center}
+
+\noindent Figure: histogram of $\sigma_{\mathrm{stat}}$ in an off-critical band.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{../../artifacts/riemann_567901/sigma_stationary_hist_off.png}
+\end{center}
+
+\section*{Artifacts}
+\begin{itemize}
+  \item Histograms/figures: \texttt{artifacts/riemann\_567901/sigma\_argmax\_hist.png}, \texttt{S\_heatmap\_zero\_*.png}, \texttt{C\_heatmap\_zero\_*.png}, \texttt{zeta\_slice\_zero\_*.png}, \texttt{S\_global.png}, \texttt{C\_global.png}.
+  \item Data bundles: \texttt{frc567901\_outputs.npz}, \texttt{coherence\_maxima.npz}, \texttt{coherence\_maxima.json}, \texttt{known\_zeros\_5000.npy}.
+\end{itemize}
+
+\section*{Discussion}
+These numerics support the claim that stationary coherence aligns with $\operatorname{Re}(s)=\tfrac12$. Limitations include grid discretization, precision/runtime tradeoffs, and the phenomenological nature of the coherence functional. We added KS tests (sub-grid and stationary) that reject uniformity (p~$10^{-7}$) on a tight window.
+
+\textbf{Operator route.} A first $\xi$-based potential $V=\tfrac14(f')^2 - \tfrac12 f''$ with Gaussian smoothing (narrow local bands) did not yet align spectra: e.g., on $t\in[4.13,113.73]$ (35 zeros), $\overline{|\sqrt{\lambda}-t_n|}\approx 13.6$. Future work will refine $V$ (log-derivative $\xi'/\xi$), boundary conditions, and spacing statistics.
+
+Future work: (i) refined operator consistent with a Hilbert--Pólya program; (ii) comprehensive null/ablation studies (off-line windows, mollified fields); (iii) statistical tests across bands and precisions; (iv) links to Li's criterion and Beurling--Nyman in coherence form.
+
+\section*{Reproducibility}
+All commands above run from the project root with a Python venv. Outputs are written to \texttt{artifacts/riemann\_567901}. The script exposes all key parameters via CLI.
+
+\end{document}

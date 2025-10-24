@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local artifacts
+artifacts/
+artifacts/**/*
+*.npz
+*.npy
+*.png
+*.gif
+build/
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
