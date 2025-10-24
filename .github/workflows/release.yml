@@ -1,26 +1,43 @@
-name: Build & Release 567.901
+name: Build & Release Publications
 
 on:
   release:
     types: [created]
 
 jobs:
-  build-pdf:
+  build-pdfs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install tectonic
+      - name: Install dependencies (tectonic + pandoc)
         run: |
           sudo apt-get update
-          sudo apt-get install -y tectonic
-      - name: Build 567.901 PDF
+          sudo apt-get install -y tectonic pandoc
+      - name: Build all TeX papers
         run: |
-          tectonic -o papers/567.901 papers/567.901/FRC_567_901_Resonance_Maximization_Report.tex
-      - name: Upload Release Asset
+          shopt -s globstar || true
+          set -e
+          for tex in papers/**/**/*.tex papers/**/*.tex; do
+            [ -f "$tex" ] || continue
+            echo "Building $tex"
+            dir=$(dirname "$tex")
+            tectonic -o "$dir" "$tex"
+          done
+      - name: Build all Markdown papers
+        run: |
+          shopt -s globstar || true
+          set -e
+          for md in papers/**/**/*.md papers/**/*.md; do
+            [ -f "$md" ] || continue
+            out="${md%.md}.pdf"
+            echo "Rendering $md -> $out"
+            pandoc "$md" --from=gfm --pdf-engine=tectonic -o "$out"
+          done
+      - name: Upload Release Assets (all PDFs)
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            papers/567.901/FRC_567_901_Resonance_Maximization_Report.pdf
+            papers/**/*.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
