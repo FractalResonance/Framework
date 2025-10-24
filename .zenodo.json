@@ -1,10 +1,10 @@
 {
-  "title": "Fractal Resonance Framework — FRC 100.003.566: UCC and Dissipation (Scientific Note)",
+  "title": "Fractal Resonance Framework — FRC 100.003 v2: Full Manuscript",
   "upload_type": "publication",
   "publication_type": "report",
   "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
-  "description": "μ-free note stating UCC and the dissipation inequality with a reproducible 1D demo; companion to 566.001 and cited by 567.901.",
-  "keywords": ["UCC", "dissipation", "coherence flow", "FRC 100.003.566"],
+  "description": "The complete FRC 100.003 v2 manuscript (narrative + technical). Supersedes informal drafts; complements the concise 100.003.566 note.",
+  "keywords": ["FRC 100.003", "resonance collapse", "vortex attractors", "fractal dimension"],
   "license": "cc-by-4.0",
-  "version": "v100.003.566-rc2"
+  "version": "v100.003-v2-rc2"
 }
