@@ -1,0 +1,10 @@
+{
+  "title": "Fractal Resonance Framework — FRC 566.001: Entropy–Coherence Reciprocity and UCC",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
+  "description": "Formalizes dS + k_* d ln C = 0 with unit conventions and the UCC; includes reproducible examples and dissipation inequality.",
+  "keywords": ["reciprocity", "UCC", "ΔG", "dissipation", "FRC 566.001"],
+  "license": "cc-by-4.0",
+  "version": "v566.001-rc3"
+}
