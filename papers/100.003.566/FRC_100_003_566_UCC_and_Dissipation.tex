@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{center}
+{\Large FRC 100.003.566 — UCC and Dissipation (Scientific Note)}\\
+{\large October 2025}\\[4pt]
+H. Servat
+\end{center}
+
+\section*{Abstract}
+We present a concise, scientific statement of the Universal Coherence Condition (UCC)
+\begin{equation}
+ \partial_t \ln C = -\nabla\!\cdot J_C + S_C,\qquad J_C = -D_C\,\nabla \ln C,\; D_C>0,
+\end{equation}
+and the resulting dissipation inequality
+\begin{equation}
+ \sigma(t) = k_* D_C \int \|\nabla\ln C\|^2\, dV \;\ge\; 0
+\end{equation}
+under standard boundary conditions. We include a minimal 1D diffusion demonstration with Neumann boundaries showing monotone decay of $\int\|\nabla\ln C\|^2$. This note is a $\mu$-free, unit–consistent companion to FRC 566.001 and cited by 567.901.
+
+\section*{1. UCC and Boundary Conditions}
+For a dimensionless coherence $C>0$, $\ln C$ is well defined. With $J_C=-D_C\nabla\ln C$ and $D_C>0$, the UCC takes the diffusion–reaction form above. Under Neumann or Dirichlet boundary conditions, multiplying by $\ln C$ and integrating by parts yields a nonnegative production term proportional to $\int\|\nabla\ln C\|^2$ (details omitted for brevity; see 566.001 for the reciprocity context and units).
+
+\section*{2. Numerical Demonstration (1D)}
+We evolve an initial hump in $\ln C$ on $[0,1]$ with Neumann boundaries and $D_C=0.05$ using a centered finite–difference scheme. The energy–like quantity $\int\|\nabla\ln C\|^2$ decays monotonically, consistent with the dissipation inequality.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{../../artifacts/566/ucc_dissipation.png}\\
+\emph{Figure.} UCC dissipation demonstration with Neumann BCs.
+\end{center}
+
+\section*{3. Reproducibility}
+Code: \verb|code/566/frc_566_ucc_sim.py|. Run it from the project root to regenerate the figure:
+\begin{verbatim}
+python code/566/frc_566_ucc_sim.py
+\end{verbatim}
+We recommend $k_*=1$ for information–layer experiments and $k_*=k_B$ for thermo–physical projections.
+
+\end{document}
