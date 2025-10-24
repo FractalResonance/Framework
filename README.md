@@ -97,3 +97,6 @@ See the [FRC Series Overview](docs/SERIES_OVERVIEW.md) for the dependency chain 
 - FRC 100.006 — Born Rule from Resonant Equilibrium  
   DOI: https://doi.org/10.5281/zenodo.17438360  
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17438360.svg)](https://doi.org/10.5281/zenodo.17438360)
+- FRC 100.006.002 — Born‑Rule Deviations under Finite‑Time and Non‑Equilibrium Conditions  
+  DOI: https://doi.org/10.5281/zenodo.17438410  
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17438410.svg)](https://doi.org/10.5281/zenodo.17438410)

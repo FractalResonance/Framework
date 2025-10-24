@@ -1,4 +1,8 @@
 # FRC Series Overview (Key Papers)
+- FRC 100.006.002 — Born‑Rule Deviations under Finite‑Time and Non‑Equilibrium Conditions  
+  DOI: https://doi.org/10.5281/zenodo.17438410
+- FRC 100.006 — Born Rule from Resonant Equilibrium  
+  DOI: https://doi.org/10.5281/zenodo.17438360
 
 - FRC 100.003 — Resonant Collapse: Guided Wavefunction Collapse via Resonant Attractors  
   DOI: https://doi.org/10.5281/zenodo.15079820
