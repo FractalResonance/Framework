@@ -1,0 +1,9 @@
+{
+  "title": "FRC 100.006.002 — Born‑Rule Deviations under Finite‑Time and Non‑Equilibrium Conditions",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
+  "description": "Analyzes when deviations from |alpha|^2 can appear in the FRC collapse picture: finite locking time, non‑ergodic microstate ensembles, and non‑stationary pointer coupling. Derives simple bias scalings, proposes falsifiable protocols, and includes toy simulations with reproducible figures.",
+  "keywords": ["Born rule","deviation","finite time","non‑ergodic","non‑stationary","FRC 100.006.002"],
+  "license": "cc-by-nc-sa-4.0"
+}
