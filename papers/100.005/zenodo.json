@@ -1,0 +1,9 @@
+{
+  "title": "FRC 100.005 — Thermodynamic Consistency of Resonant Collapse",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
+  "description": "Shows that deterministic resonance-based collapse is thermodynamically consistent in open measurements: local ordering is balanced by entropy export and correlation growth so total entropy increases. Includes a minimal model, entropy-accounting plots, and reproducible code.",
+  "keywords": ["measurement","open systems","entropy","coherence","collapse","FRC 100.005"],
+  "license": "cc-by-4.0"
+}
