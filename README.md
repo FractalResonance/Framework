@@ -76,3 +76,20 @@ Under the following terms:
 ---
 
 **Keywords**: fractal resonance, FRC, Fractal Resonance Cognition, complex systems, quantum chaos, quantum measurement, wavefunction collapse, resonant attractors, system dynamics, emergence, adaptive systems, nonlinear dynamics
+## Publications & DOIs
+
+- FRC 100.001 — Fractal Resonance Cognition: A Framework for Complex Systems Analysis  
+  DOI: https://doi.org/10.5281/zenodo.15073056
+- FRC 100.002 — FRC in Quantum Chaos: Nodal Patterns in the Stadium Billiard  
+  DOI: https://doi.org/10.5281/zenodo.15079278
+- FRC 100.003 — Resonance Collapse: Guided Wavefunction Collapse via Resonant Attractors  
+  DOI: https://doi.org/10.5281/zenodo.15079820
+- FRC 567.901 — Riemann Resonance Maximization  
+  DOI: pending (rc2)
+- FRC 566.001 — Reciprocity & UCC  
+  DOI: pending (rc2)
+- FRC 100.003.566 — UCC & Dissipation (Scientific Note)  
+  DOI: pending (rc2)
+- FRC 100.003 v2 — Full Manuscript  
+  DOI: pending (rc2)
+
