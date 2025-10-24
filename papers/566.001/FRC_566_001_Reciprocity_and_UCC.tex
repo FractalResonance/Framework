@@ -1,0 +1,67 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{hyperref}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{center}
+{\Large FRC 566.001 — Entropy–Coherence Reciprocity and UCC (Scientific Draft)}\\
+{\large October 2025}\\[4pt]
+H. Servat
+\end{center}
+
+\section*{1. Introduction}
+We formalize the FRC 566 reciprocity between entropy $S$ and coherence $C$ and the associated flow equation (UCC). The goal is to provide unit–consistent definitions, thermodynamic projections, and reproducible validations without any extra metaphors or layer taxonomies.
+
+\section*{2. Definitions and Units}
+Entropy $S$ is measured in nats (information layers) or J/K (thermodynamic layers). Coherence $C$ is a dimensionless scalar gauge. We adopt two conventions for the coherence constant $k_*$:
+\begin{itemize}
+  \item information/cognition layers: $k_*=1$ (nats),
+  \item thermo/physical layers: $k_*=k_B$ (Boltzmann constant).
+\end{itemize}
+Regularization for numerical work uses $C_\varepsilon = 1/(Z^2+\varepsilon)$ with small $\varepsilon>0$.
+
+\section*{3. Reciprocity Law}
+The core relationship is
+\begin{equation}
+ dS + k_*\, d\ln C = 0, \qquad \Rightarrow \qquad S + k_*\ln C = \text{const.}
+\end{equation}
+In information form, with a distribution $p$, define $C[p]=\exp[-H(p)/k_*]$ where $H$ is Shannon entropy (nats). Then KL divergence and mutual information yield coherence ratios and coupling penalties:
+\begin{align}
+\mathrm{RER}(p\!\to\!q) &= \frac{C[q]}{C[p]} = \exp\!\big[ -D_{\mathrm{KL}}(p\|q)/k_* \big],\\
+I(X;Y) &= D_{\mathrm{KL}}(p_{XY}\|p_Xp_Y) \quad \Rightarrow \quad C_{XY}=\exp[-I/k_*].
+\end{align}
+Thermodynamic projection (isothermal) gives the unit–consistent free–energy relation
+\begin{equation}
+ \Delta G = -\,k_* T\, \Delta \ln C.
+\end{equation}
+
+\section*{4. Universal Coherence Condition (UCC)}
+We define the local flow form
+\begin{equation}
+ \partial_t \ln C = -\nabla\!\cdot J_C + S_C, \qquad J_C = -D_C\,\nabla \ln C,
+\end{equation}
+with $D_C\!>\!0$. An energy–like dissipation follows under suitable boundary conditions (Neumann/Dirichlet):
+\begin{equation}
+ \sigma(t) \equiv k_* D_C \int \|\nabla \ln C\|^2\, dV \;\ge\; 0.
+\end{equation}
+Linear well–posedness holds for the diffusion–reaction form; nonlocal kernels (fractional Laplacian class) can be admitted if the operator remains dissipative.
+
+\section*{5. Worked Examples (Reproducible)}
+\textbf{(A) Chemical toy (isothermal).} Small dataset fit of $\Delta G$ vs $\Delta\ln C$ validates slope $-k_BT$.\\
+\textbf{(B) Stochastic field (OU + coherence drift).} Add drift $\propto \nabla\ln C$; demonstrate stationary $\ln C$ profile and nonnegative $\sigma(t)$.\\
+\textbf{(C) Learning system (classifier).} Coherence–regularized training: $\mathcal{L}=\mathrm{CE}+\lambda H(Z)/k_*$ where $H(Z)$ is Gaussian entropy of features; empirically fit $\Delta S\approx -k_*\Delta\ln C$ and report calibration/OOD deltas.
+
+\section*{6. Validation}
+We compute slopes and $R^2$ for $\Delta S$ vs $-k_*\Delta\ln C$ across examples; verify UCC dissipation; include KS tests against nulls for coherence concentration.
+
+\section*{7. Limits and Identifiability}
+Discuss gauge freedom in $C$, calibration of $k_*$, and sensitivity to regularization $\varepsilon$, grid, and boundary conditions.
+
+\section*{8. Reproducibility}
+Code lives under \texttt{code/566/} with a single command to regenerate all figures and pack artifacts. A GitHub Release triggers Zenodo archiving.
+
+\end{document}
+
