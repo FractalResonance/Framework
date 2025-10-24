@@ -76,3 +76,18 @@ Under the following terms:
 ---
 
 **Keywords**: fractal resonance, FRC, Fractal Resonance Cognition, complex systems, quantum chaos, quantum measurement, wavefunction collapse, resonant attractors, system dynamics, emergence, adaptive systems, nonlinear dynamics
+
+---
+
+![CI](https://github.com/FractalResonance/Framework/actions/workflows/release.yml/badge.svg?branch=main)
+
+### Releasing a Paper (One-liner)
+
+```
+# set root metadata from the paper, commit, and tag a release
+scripts/set_zenodo.sh 567.901 && git commit -am "set zenodo for 567.901" && git tag v567.901-rc3 && git push --tags
+```
+
+- CI builds all TeX/MD PDFs and attaches them to the Release
+- Zenodo ingests the tag’s .zenodo.json and mints/updates the DOI
+
