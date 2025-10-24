@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{center}
+{\Large FRC 100.006.002 — Born‑Rule Deviations under Finite‑Time and Non‑Equilibrium Conditions}\\
+{\large October 2025}\\[4pt]
+H. Servat
+\end{center}
+
+\section*{Abstract}
+In the FRC program, collapse arises by resonance phase‑locking to pointer attractors and the Born rule emerges as a stationary equilibrium of microstates. This note analyzes when and how \emph{deviations} from $|\alpha|^2$ can appear: (i) finite locking time (truncated dynamics), (ii) biased/insufficiently mixed microstate ensembles (non‑ergodicity), and (iii) non‑stationary pointer coupling. We derive simple bias scalings, propose falsifiable protocols to detect or rule out deviations, and provide toy simulations with code to reproduce the figures.
+
+\section*{1. Conditions for deviations}
+\textbf{Finite time $T$:} if phase‑locking completes on a timescale comparable to sampling time, sectors with slower attraction are under‑represented; leading bias $\varepsilon\!\sim\!e^{-\kappa T}$.\\
+\textbf{Non‑ergodic ensembles:} a skewed initial microstate density shifts sector frequencies by $\mathcal{O}(\delta)$ until mixing erases the skew.\\
+\textbf{Non‑stationary coupling:} time‑dependent pointer coupling $g(t)$ can temporarily favor sectors; adiabatic protocols suppress this.
+
+\section*{2. Minimal drift picture}
+Let sector weights be $|\alpha|^2$ in equilibrium. A weak drift updates microstates toward their nearest sector; deviations arise when the drift/mixing dynamics is truncated or non‑stationary. We model three cases below and quantify $\varepsilon(T,\delta,g)$.
+
+\section*{3. Simulations (toy, reproducible)}
+\verb|code/100.006.002/make_figures.py| generates three figures: (i) bias vs locking time $T$, (ii) bias vs ensemble skew $\delta$, (iii) bias vs coupling ramp. Seeds are fixed.
+
+\begin{center}
+\includegraphics[width=0.72\linewidth]{../../artifacts/100.006.002/bias_vs_time.png}\\
+\emph{Figure 1.} Finite‑time locking: mean absolute deviation from $|\alpha|^2$ vs horizon $T$ (toy).
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.72\linewidth]{../../artifacts/100.006.002/bias_vs_skew.png}\\
+\emph{Figure 2.} Non‑ergodic ensembles: deviation vs initial skew $\delta$.
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.72\linewidth]{../../artifacts/100.006.002/bias_vs_ramp.png}\\
+\emph{Figure 3.} Non‑stationary coupling: deviation vs ramp rate; adiabatic ramps suppress bias.
+\end{center}
+
+\section*{4. Protocols and falsifiability}
+\textbf{P‑D1:} repeat weak‑then‑strong sequences with increasing horizon $T$; deviations should decay (exponential/overdamped) if finite‑time bias is the cause.\\
+\textbf{P‑D2:} randomize microstate preparation to erase ensemble skew; residual deviations falsify non‑ergodicity as the source.\\
+\textbf{P‑D3:} use slow ramps for pointer coupling; deviations that vanish under adiabatic ramps identify non‑stationarity as the source.
+
+\section*{Reproducibility}
+Run \verb|python code/100.006.002/make_figures.py|; figures are written to \verb|artifacts/100.006.002/|. The script prints the measured mean deviations for each condition.
+
+\section*{References}
+\small
+\begin{itemize}
+  \item FRC~100.006 — Born Rule from Resonant Equilibrium. DOI: \href{https://doi.org/10.5281/zenodo.17438360}{10.5281/zenodo.17438360}.
+  \item FRC~100.005 — Thermodynamic Consistency. DOI: \href{https://doi.org/10.5281/zenodo.17438231}{10.5281/zenodo.17438231}.
+  \item FRC~566.001 — Reciprocity \& UCC. DOI: \href{https://doi.org/10.5281/zenodo.17437759}{10.5281/zenodo.17437759}.
+\end{itemize}
+
+\end{document}
