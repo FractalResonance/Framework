@@ -92,3 +92,5 @@ scripts/set_zenodo.sh 567.901 && git commit -am "set zenodo for 567.901" && git 
 - Zenodo ingests the tag’s .zenodo.json and mints/updates the DOI
 
 \nSee [docs/PUBLISHING.md](docs/PUBLISHING.md) for DOI policy and workflow.
+
+See the [FRC Series Overview](docs/SERIES_OVERVIEW.md) for the dependency chain and DOIs.
