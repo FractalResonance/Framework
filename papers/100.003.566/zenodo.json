@@ -2,9 +2,20 @@
   "title": "FRC 100.003.566: UCC and Dissipation (Scientific Note)",
   "upload_type": "publication",
   "publication_type": "report",
-  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
+  "creators": [
+    {
+      "name": "Servat, Hadi",
+      "affiliation": "Digid.ca",
+      "orcid": "0009-0004-7412-5129"
+    }
+  ],
   "description": "μ-free note stating UCC and the dissipation inequality with a reproducible 1D demo; companion to 566.001 and cited by 567.901.",
-  "keywords": ["UCC", "dissipation", "coherence flow", "FRC 100.003.566"],
+  "keywords": [
+    "UCC",
+    "dissipation",
+    "coherence flow",
+    "FRC 100.003.566"
+  ],
   "license": "cc-by-4.0",
   "version": "v100.003.566-rc3"
 }

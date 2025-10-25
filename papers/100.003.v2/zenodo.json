@@ -2,9 +2,20 @@
   "title": "FRC 100.003 v2: Full Manuscript",
   "upload_type": "publication",
   "publication_type": "report",
-  "creators": [{"name": "Servat, Hadi", "affiliation": "Digid.ca"}],
+  "creators": [
+    {
+      "name": "Servat, Hadi",
+      "affiliation": "Digid.ca",
+      "orcid": "0009-0004-7412-5129"
+    }
+  ],
   "description": "The complete FRC 100.003 v2 manuscript (narrative + technical). Supersedes informal drafts; complements the concise 100.003.566 note.",
-  "keywords": ["FRC 100.003", "resonance collapse", "vortex attractors", "fractal dimension"],
+  "keywords": [
+    "FRC 100.003",
+    "resonance collapse",
+    "vortex attractors",
+    "fractal dimension"
+  ],
   "license": "cc-by-4.0",
   "version": "v100.003-v2-rc3"
 }
