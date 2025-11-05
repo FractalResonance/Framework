@@ -1,0 +1,219 @@
+{
+  "total": 20,
+  "papers": [
+    {
+      "id": 17526513,
+      "doi": "10.5281/zenodo.17526513",
+      "title": "FRC 566.020 — Spectral Modes and Relaxation in UCC",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "release.zip",
+        "FRC_566_020_Spectral_Modes_and_Relaxation.pdf"
+      ]
+    },
+    {
+      "id": 17526506,
+      "doi": "10.5281/zenodo.17526506",
+      "title": "FRC 566.010 — UCC PDE: Existence, Uniqueness, and Dissipation",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "FRC_566_010_UCC_PDE_Wellposedness.pdf",
+        "release.zip"
+      ]
+    },
+    {
+      "id": 17526502,
+      "doi": "10.5281/zenodo.17526502",
+      "title": "Fractal Resonance Framework — FRC 100.003/567.901: Riemann Resonance Maximization",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "release.zip",
+        "FRC_567_901_Resonance_Maximization_Report.pdf"
+      ]
+    },
+    {
+      "id": 17526499,
+      "doi": "10.5281/zenodo.17526499",
+      "title": "FRC 100.006.002 — Born‑Rule Deviations under Finite‑Time and Non‑Equilibrium Conditions",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "release.zip",
+        "FRC_100_006_002_Born_Rule_Deviation_Conditions.pdf"
+      ]
+    },
+    {
+      "id": 17526495,
+      "doi": "10.5281/zenodo.17526495",
+      "title": "FRC 566.001: Entropy–Coherence Reciprocity and UCC",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "release.zip",
+        "FRC_566_001_Reciprocity_and_UCC.pdf"
+      ]
+    },
+    {
+      "id": 17526487,
+      "doi": "10.5281/zenodo.17526487",
+      "title": "FRC 100.005 — Thermodynamic Consistency of Resonant Collapse",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "FRC_100_005_Thermodynamic_Consistency.pdf",
+        "release.zip"
+      ]
+    },
+    {
+      "id": 17526474,
+      "doi": "10.5281/zenodo.17526474",
+      "title": "FRC 100.004 — Quantum Foundations in Fractal Resonance Cognition",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "release.zip",
+        "FRC_100_004_Quantum_Foundations.pdf"
+      ]
+    },
+    {
+      "id": 17526459,
+      "doi": "10.5281/zenodo.17526459",
+      "title": "FRC 567.902 — Stationary Manifold of |ζ(σ+iτ)|",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-11-04",
+      "files": [
+        "FRC_567_902_Stationary_Manifold_of_Zeta.pdf",
+        "release.zip"
+      ]
+    },
+    {
+      "id": 17444600,
+      "doi": "10.5281/zenodo.17444600",
+      "title": "FRC 100.006 — Born Rule from Resonant Equilibrium",
+      "license": null,
+      "created": "2025-10-25",
+      "files": [
+        "FRC_100_006_Born_Rule_From_Resonant_Equilibrium.pdf"
+      ]
+    },
+    {
+      "id": 17444552,
+      "doi": "10.5281/zenodo.17444552",
+      "title": "FRC Text Book v.1 — Entropy–Coherence Reciprocity",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-25",
+      "files": [
+        "FRC_Text_Book_v1_ECR.md"
+      ]
+    },
+    {
+      "id": 17444363,
+      "doi": "10.5281/zenodo.17444363",
+      "title": "FRC Reading List v1 — Foundational References for Resonance, PDE, Probability, and Quantum Foundations",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-25",
+      "files": [
+        "FRC_READING_LIST.pdf",
+        "frc_master.bib"
+      ]
+    },
+    {
+      "id": 17443531,
+      "doi": "10.5281/zenodo.17443531",
+      "title": "FRC 183.002 — Hidden-Order Poisson Law for Undersampled Deterministic Wavefields",
+      "license": null,
+      "created": "2025-10-25",
+      "files": [
+        "FRC_183_002_Hidden_Order_Poisson_Law.pdf",
+        "release.zip"
+      ]
+    },
+    {
+      "id": 17443451,
+      "doi": "10.5281/zenodo.17443451",
+      "title": "FRC 566.020 — Spectral Modes and Relaxation in UCC",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-25",
+      "files": [
+        "release.zip",
+        "FRC_566_020_Spectral_Modes_and_Relaxation.pdf"
+      ]
+    },
+    {
+      "id": 17438673,
+      "doi": "10.5281/zenodo.17438673",
+      "title": "FRC 183.002 — Hidden‑Order Poisson Law for Undersampled Deterministic Wavefields",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-25",
+      "files": [
+        "FRC_183_002_Hidden_Order_Poisson_Law.pdf"
+      ]
+    },
+    {
+      "id": 17438671,
+      "doi": "10.5281/zenodo.17438671",
+      "title": "FRC 566.010 — UCC PDE: Existence, Uniqueness, and Dissipation",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-25",
+      "files": [
+        "FRC_566_010_UCC_PDE_Wellposedness.pdf"
+      ]
+    },
+    {
+      "id": 17438669,
+      "doi": "10.5281/zenodo.17438669",
+      "title": "FRC 567.902 — Stationary Manifold of |zeta|",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-25",
+      "files": [
+        "FRC_567_902_Stationary_Manifold_of_Zeta.pdf"
+      ]
+    },
+    {
+      "id": 17438524,
+      "doi": "10.5281/zenodo.17438524",
+      "title": "FRC 100.003 v2 — Full Manuscript",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-25",
+      "files": [
+        "FRC_100_003_v2.pdf",
+        "Figures.zip",
+        "FRC_100.003_Wavefunction Collapse via Resonant.pdf",
+        "code.zip"
+      ]
+    },
+    {
+      "id": 17437878,
+      "doi": "10.5281/zenodo.17437878",
+      "title": "FRC 100.003.566: UCC and Dissipation (Scientific Note)",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-10-24",
+      "files": [
+        "FRC_100_003_566_UCC_and_Dissipation.pdf"
+      ]
+    },
+    {
+      "id": 15079278,
+      "doi": "10.5281/zenodo.15079278",
+      "title": "FRC 100.002 — Fractal Resonance Cognition in Quantum Chaos: Nodal Patterns in the Stadium Billiard",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-03-24",
+      "files": [
+        "FRC100.002 Fractal Resonance Cognition in Quantum Chaos_ Nodal Patterns in the Stadium Billiard.pdf"
+      ]
+    },
+    {
+      "id": 15073056,
+      "doi": "10.5281/zenodo.15073056",
+      "title": "FRC 100.001 — Fractal Resonance Cognition: A Framework for Complex Systems Analysis",
+      "license": "cc-by-nc-sa-4.0",
+      "created": "2025-03-24",
+      "files": [
+        "FRC_100.001_mathjax.html.pdf"
+      ]
+    }
+  ]
+}
