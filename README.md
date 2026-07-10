@@ -1,5 +1,19 @@
 # Fractal Resonance Cognition (FRC) Framework
 
+> **Historical research archive.** This repository preserves earlier FRC
+> manuscripts, code, metadata, and publishing workflow. It is not the source
+> of current FRC claim status, current paper versions, or current Zenodo DOI
+> lineage. Do not use an older file here to override a later living-paper
+> version.
+>
+> Current public corpus: [fractalresonance.com](https://fractalresonance.com)
+> and [servathadi/fractalresonance](https://github.com/servathadi/fractalresonance).
+> Current published releases: [Zenodo](https://zenodo.org/communities/fractal-resonance-coherence).
+> Canonical internal research and governance source: private
+> `servathadi/frc-program`.
+>
+> See [CURRENT_STATUS.md](CURRENT_STATUS.md) before citing or extending FRC.
+
 <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" alt="License: CC BY-NC-ND 4.0">
 
 ## Overview
@@ -140,4 +154,3 @@ See the [FRC Series Overview](docs/SERIES_OVERVIEW.md) for the dependency chain 
   - [ ] Use the prepared arXiv zips in `arxiv/` and the one‑page summaries; send endorsement emails
 - Redundant records:
   - [ ] Supersede/annotate any remaining GitHub auto‑archives without PDFs to point to the correct paper DOIs
-
