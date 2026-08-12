@@ -1,0 +1,14 @@
+{
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "title": "FRC 566.020 — Spectral Modes and Relaxation in UCC",
+  "creators": [
+    { "name": "Servat, Hadi", "orcid": "0009-0004-7412-5129" }
+  ],
+  "description": "We linearize the UCC evolution for u=ln C around a stationary equilibrium and derive modal relaxation rates τ_n=1/(D_C λ_n) from the Laplace spectrum. A 1D numerical demo illustrates exponential modal decay and parameter recovery.",
+  "license": "cc-by-nc-sa-4.0",
+  "access_right": "open",
+  "keywords": ["FRC", "UCC", "spectrum", "relaxation", "eigenmodes"],
+  "related_identifiers": [],
+  "notes": "Prepared for Zenodo concept DOI; add communities and relations on publish."
+}
