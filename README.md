@@ -8,7 +8,7 @@
 >
 > Current public corpus: [fractalresonance.com](https://fractalresonance.com)
 > and [servathadi/fractalresonance](https://github.com/servathadi/fractalresonance).
-> Current published releases: [Zenodo](https://zenodo.org/communities/fractal-resonance-coherence).
+> Current published releases: [Zenodo](https://zenodo.org/communities/frc).
 > Canonical internal research and governance source: private
 > `servathadi/frc-program`.
 >
